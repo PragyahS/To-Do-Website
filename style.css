@@ -1,0 +1,38 @@
+h1{
+    text-align: center;
+    font-size: 80px;
+}
+body {
+  font-family: Arial, sans-serif;
+  background: url("https://previews.123rf.com/images/mexrix/mexrix1108/mexrix110800125/10391414-notepad-lest-on-wooden-background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.85); 
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  width: 320px;
+  text-align: center;
+}
+#taskList {
+  list-style: none;   
+  padding-left: 0; 
+  margin: 0;
+}
+#taskList li::before {
+  content: "⭐"; 
+  position: absolute;
+  color: #fcb531;
+  left: 0;
+}
+#taskList li {
+  position: relative;
+  padding-left: 25px; 
+}
